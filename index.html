@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <title>blanja</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap.css" rel="stylesheet">
+    <link href="./bootstrap-theme.css" rel="stylesheet">
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <!-- <link href="navbar-static-top.css" rel="stylesheet"> -->
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom By me -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Style Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
+
+  </head>
+  <body onload="getData();">
+        <br/>
+        <div class="container title">
+          <label id="StarName"></label>
+        </div>
+        <br/>
+       <!--=============== Profil Star ============== -->
+        <div class="container">
+          <div class="jumbotron">
+            <div class="row StarImg">
+
+              <div class="col-sm-2">
+                <img src="luke.jpg" alt="">
+              </div>
+              
+              <div class="col-sm-10">
+                <div class="col-sm-12">
+                  <div class="col-sm-2">
+                    <label>Height&#58;</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label id="height"></label>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="col-sm-2">
+                    <label>Mass&#58;</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label id="mass"></label>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="col-sm-2">
+                    <label>Hair Color&#58;</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label id="hair"></label>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="col-sm-2">
+                    <label>Skin Color&#58;</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label id="skin"></label>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="col-sm-2">
+                    <label>Birth Year&#58;</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label id="birth"></label>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="col-sm-2">
+                    <label>Gender&#58;</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label id="gender"></label>
+                  </div>
+                </div>
+
+              </div> <!-- col sm 10 -->
+            </div> <!-- Row -->
+          </div> <!-- Jumbotron -->
+        </div> <!-- /container -->
+<!-- =============End Profil Star==================== -->
+
+
+
+<!-- =========Movie=========== -->
+
+        <div class="container">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label id="subtitleMovies"></label>
+                </div>
+                <div class="col-sm-2">
+                  <label id="moreMovie">See More</label>
+                </div>
+                <div class="col-sm-4">
+                  <label id="otherMovie">Related Another Movie's</label>
+                </div>
+              </div> <!-- row -->
+              
+              
+              <div class="row" id="MovieThumbnail">
+                <div class="col-sm-2">
+                  <div class="thumbnail">
+                    <img src="download.png" alt="...">
+                    <div class="caption">
+                      <h5 id="moviesSubtitle0"></h5>
+                      <label>Director&#58;</label>
+                      <label id="director0"></label>
+                      <BR>
+                      <label>Release&#58;</label>
+                      <br>
+                      <label id="release0"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="thumbnail">
+                    <img src="download.png" alt="...">
+                    <div class="caption">
+                      <h5 id="moviesSubtitle1"></h5>
+                      <label>Director&#58;</label>
+                      <label id="director1"></label>
+                      <BR>
+                      <label>Release&#58;</label>
+                      <br>
+                      <label id="release1"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="thumbnail">
+                    <img src="download.png" alt="...">
+                    <div class="caption">
+                      <h5 id="moviesSubtitle2"></h5>
+                      <label>Director&#58;</label>
+                      <label id="director2"></label>
+                      <BR>
+                      <label>Release&#58;</label>
+                      <br>
+                      <label id="release2"></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <div class="thumbnail">
+                    <img src="download.png" alt="...">
+                    <div class="caption">
+                      <h5 id="moviesSubtitle3"></h5>
+                      <label>Director&#58;</label>
+                      <label id="director3"></label>
+                      <BR>
+                      <label>Release&#58;</label>
+                      <br>
+                      <label id="release3"></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="thumbnail" id="relatedMovie">
+    
+                    <div class="col-sm-12" id="bcgrelatedMovie"> 
+                      <div class="col-sm-12">
+                        <div class="col-sm-10">
+                          <label id="moviesSubtitle4">
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12" id="direct">
+                        <div class="col-sm-6">
+                          <label>Director&#58;</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label id="director4"></label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12" id="prod">
+                        <div class="col-sm-6">
+                          <label>Producer&#58;</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label id="producer4"></label>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-12" id="RD">
+                        <div class="col-sm-6">
+                          <label>Release Date&#58;</label>
+                        </div>
+                        <div class="col-sm-6">
+                          <label id="release4"></label>
+                        </div>
+                      </div>
+                    </div> <!-- col-sm-12 first -->
+                   
+                    
+                    <div class="caption">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="col-sm-12">
+                            <div class="col-sm-12">
+                              <p id="storyline4"></p>
+                              
+                              <span id="moreRelated">See More</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- Thumbnail col-sm-4-->
+                </div> <!-- col-sm-4 -->
+              </div> <!-- Row -->
+        </div> <!-- Container -->
+
+                    
+<!-- =========End Movie=========== -->                    
+                    
+                    <script src="./bootstrap.min.js"></script>
+                  </body>
+                  <script language="javascript">
+                  function getData(){
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.open("GET","http://swapi.co/api/people/1/", true);
+                    xhttp.send();
+                    xhttp.onreadystatechange = function(){
+                      if (this.readyState == 4 && this.status == 200) { 
+                        jsonResponse = JSON.parse(this.responseText)
+                    
+                      //Get Profiles
+                      document.getElementById("StarName").innerHTML = jsonResponse.name;
+                      document.getElementById("height").innerHTML= jsonResponse.height;
+                      document.getElementById("mass").innerHTML= jsonResponse.mass;
+                      document.getElementById("hair").innerHTML= jsonResponse.hair_color;
+                      document.getElementById("skin").innerHTML= jsonResponse.skin_color;
+                      document.getElementById("birth").innerHTML= jsonResponse.birth_year;
+                      document.getElementById("gender").innerHTML= jsonResponse.gender;
+
+                      // Get Last Name
+                      var getLastName =jsonResponse.name;
+                      getLastName = getLastName.split(" ").pop();
+                      document.getElementById("subtitleMovies").innerHTML = getLastName + " Movie's "
+                  
+
+                      //Get films
+                      var films = jsonResponse.films;
+
+                      //1st Film
+                      xhttps0 = new XMLHttpRequest();
+                      xhttps0.open("GET", films[0], true);
+                      xhttps0.send();
+                      xhttps0.onreadystatechange = function(){
+                        if (this.readyState == 4 && this.status == 200){
+                          var jsonResponse0 = JSON.parse(this.responseText)
+                          document.getElementById("moviesSubtitle0").innerHTML= jsonResponse0.title
+                          document.getElementById("director0").innerHTML = jsonResponse0.director
+                          document.getElementById("release0").innerHTML = jsonResponse0.release_date
+
+                        }
+                      }
+
+
+                      // 2nd Film
+                      xhttps1 = new XMLHttpRequest();
+                      xhttps1.open("GET", films[1], true);
+                      xhttps1.send();
+                      xhttps1.onreadystatechange = function(){
+                        if(this.readyState == 4 && this.status == 200){
+                          var jsonResponse1 = JSON.parse(this.responseText)
+                          document.getElementById("moviesSubtitle1").innerHTML= jsonResponse1.title
+                          document.getElementById("director1").innerHTML= jsonResponse1.director
+                          document.getElementById("release1").innerHTML= jsonResponse1.release_date
+                        }
+                      }
+
+
+                      // 3rd Film
+                      xhttps2 = new XMLHttpRequest();
+                      xhttps2.open("GET", films[2], true);
+                      xhttps2.send();
+                      xhttps2.onreadystatechange = function(){
+                        if(this.readyState == 4 && this.status == 200){
+                          var jsonResponse2 = JSON.parse(this.responseText)
+                          document.getElementById("moviesSubtitle2").innerHTML= jsonResponse2.title
+                          document.getElementById("director2").innerHTML= jsonResponse2.director
+                          document.getElementById("release2").innerHTML= jsonResponse2.release_date
+                        }
+                      }
+
+
+                      // 4th Films
+                      xhttps3 = new XMLHttpRequest();
+                      xhttps3.open("GET", films[3], true);
+                      xhttps3.send();
+                      xhttps3.onreadystatechange = function(){
+                        if(this.readyState == 4 && this.status == 200){
+                          var jsonResponse3 = JSON.parse(this.responseText)
+                          document.getElementById("moviesSubtitle3").innerHTML = jsonResponse3.title
+                          document.getElementById("director3").innerHTML = jsonResponse3.director
+                          document.getElementById("release3").innerHTML = jsonResponse3.release_date
+                        }
+                      }
+
+                      // 5th Films
+                      xhttps4 = new XMLHttpRequest();
+                      xhttps4.open("GET", films[4], true);
+                      xhttps4.send();
+                      xhttps4.onreadystatechange = function(){
+                        if(this.readyState ==4 && this.status == 200){
+                          var jsonResponse4 = JSON.parse(this.responseText)
+                          document.getElementById("moviesSubtitle4").innerHTML=jsonResponse4.title
+                          document.getElementById("director4").innerHTML=jsonResponse4.title
+                          document.getElementById("producer4").innerHTML= jsonResponse4.producer
+                          document.getElementById("release4").innerHTML= jsonResponse4.release_date
+                          document.getElementById("storyline4").innerHTML = jsonResponse4.opening_crawl
+                        }
+                    }
+
+
+                }
+            };
+        }
+
+                  </script>
+                </html>

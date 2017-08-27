@@ -1,0 +1,82 @@
+
+/*=============Profil Star=============*/
+
+#StarName{
+	font-size: 30px;
+	border-left: 5px solid red;
+	margin-left: 5px;
+	font-family: 'Rubik', sans-serif;
+	padding-left: 20px;
+	color:black;
+}
+
+.jumbotron{
+	background-color:black;
+}
+
+.StarImg img{
+	height: 200px;
+	width: 160px;
+}
+
+.StarImg{
+	color:white;
+
+	
+}
+.StarImg label{
+	font-size: 14px;
+	margin-left: -30px;
+	color:white;
+}
+
+/*===================End Profil Star=============*/
+
+
+/*=================== Movie's ===================*/
+#subtitleMovies ,#otherMovie{
+	font-family: 'Rubik', sans-serif;
+	font-size: 20px;
+	color:red;
+}
+
+#otherMovie{
+	margin-left: 20px;
+}
+
+#moreMovie{
+	float: right;
+	color: #00ACC1;
+	font-weight: bold;
+}
+
+#MovieThumbnail,label{
+	color: #9E9E9E;
+}
+
+
+#moreRelated, span{
+	float: right;
+	color: #00ACC1;
+	font-weight: bold;
+}
+
+#relatedMovie{
+	margin-left: 20px;
+
+}
+
+#bcgrelatedMovie{
+	background-color: black;
+}
+
+#moviesSubtitle4{
+	color: #9E9E9E;
+	font-size: 18px
+	
+}
+
+
+
+
+
